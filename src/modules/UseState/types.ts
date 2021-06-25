@@ -1,5 +1,4 @@
 export interface IUserInfoProps {
-    firstName: string
-    lastName: string
-    password: string | number
+    name: string
+    password: string
 }

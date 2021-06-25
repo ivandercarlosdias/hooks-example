@@ -30,43 +30,16 @@ export default function UseStateExample(): JSX.Element {
             </p>
 
             <SectionTitle title="Exercício #2" />
-            <ul>
-                <li>Nome: {user.firstName}</li>
-                <li>Sobrenome: {user.lastName}</li>
-                <li>Senha: {user.password}</li>
-            </ul>
             <input
-                value={user.firstName}
+                value={user.name}
                 onChange={(e) =>
                     setUserInfo((x) => ({
                         ...x,
-                        firstName: e.target.value,
+                        name: e.target.value,
                     }))
                 }
                 type="text"
                 placeholder="Nome"
-            />
-            <input
-                value={user.lastName}
-                onChange={(e) =>
-                    setUserInfo((x) => ({
-                        ...x,
-                        lastName: e.target.value,
-                    }))
-                }
-                type="text"
-                placeholder="Sobrenome"
-            />
-            <input
-                value={user.password}
-                onChange={(e) =>
-                    setUserInfo((x) => ({
-                        ...x,
-                        password: e.target.value,
-                    }))
-                }
-                type="password"
-                placeholder="Nova senha"
             />
         </>
     )
