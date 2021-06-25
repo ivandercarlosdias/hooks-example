@@ -1,0 +1,21 @@
+.title {
+    padding: 15px;
+    background: white;
+    margin-bottom: 30px;
+    border-left: 10px solid #02aab0;
+
+    h1 {
+        margin: 0;
+        font-weight: bolder;
+    }
+
+    h2 {
+        margin-top: 5px;
+        margin-bottom: 0px;
+        font-weight: lighter;
+    }
+
+    &-error {
+        border-color: #d84039;
+    }
+}
