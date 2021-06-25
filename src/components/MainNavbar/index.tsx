@@ -8,6 +8,7 @@ export default function MainNavbar(): JSX.Element {
                 <li>
                     <Link to="/">Home</Link>
                     <Link to="/usestate">useState()</Link>
+                    <Link to="/useeffect">useEffect()</Link>
                 </li>
             </ul>
         </nav>
