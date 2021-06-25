@@ -1,5 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+}
+
+.btn {
+    user-select: none;
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px;
+    outline: none;
+    background-color: #00cdac;
+    border: 0;
+    border-radius: 5px;
+    margin: auto 10px;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.3);
+    transition: ease-in 50ms;
+
+    &:active {
+        box-shadow: 0 1.5px 0 rgba(0, 0, 0, 0.3);
+    }
+}
+
+input,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
 }
