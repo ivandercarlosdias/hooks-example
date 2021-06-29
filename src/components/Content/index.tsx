@@ -7,6 +7,7 @@ import UseMemoExample from '../../modules/UseMemo'
 import UseCallbackExample from '../../modules/UseCallback'
 import UseContextExample from '../../modules/useContext'
 import UseReducerExample from '../../modules/UseReducer'
+import UseMyHookExample from '../../modules/UseMyHook'
 import NotFound from '../../modules/NotFound'
 
 import './style.scss'
@@ -35,6 +36,9 @@ export default function Content(): JSX.Element {
                 </Route>
                 <Route path="/usereducer">
                     <UseReducerExample />
+                </Route>
+                <Route path="/hook-personalizado">
+                    <UseMyHookExample />
                 </Route>
                 <Route path="*">
                     <NotFound />

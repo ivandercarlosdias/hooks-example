@@ -13,6 +13,7 @@ export default function MainNavbar(): JSX.Element {
                     <Link to="/usecallback">useCallback()</Link>
                     <Link to="/usecontext">useContext()</Link>
                     <Link to="/usereducer">useReducer()</Link>
+                    <Link to="/hook-personalizado">Hook Personalizado</Link>
                 </li>
             </ul>
         </nav>
