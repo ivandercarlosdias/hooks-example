@@ -5,6 +5,7 @@ import UseStateExample from '../../modules/UseState'
 import UseEffectExample from '../../modules/UseEffect'
 import UseMemoExample from '../../modules/UseMemo'
 import UseCallbackExample from '../../modules/UseCallback'
+import UseContextExample from '../../modules/useContext'
 import NotFound from '../../modules/NotFound'
 
 import './style.scss'
@@ -27,6 +28,9 @@ export default function Content(): JSX.Element {
                 </Route>
                 <Route path="/usecallback">
                     <UseCallbackExample />
+                </Route>
+                <Route path="/usecontext">
+                    <UseContextExample />
                 </Route>
                 <Route path="*">
                     <NotFound />

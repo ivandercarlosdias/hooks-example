@@ -11,6 +11,7 @@ export default function MainNavbar(): JSX.Element {
                     <Link to="/useeffect">useEffect()</Link>
                     <Link to="/usememo">useMemo()</Link>
                     <Link to="/usecallback">useCallback()</Link>
+                    <Link to="/usecontext">useContext()</Link>
                 </li>
             </ul>
         </nav>
