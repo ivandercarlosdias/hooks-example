@@ -24,7 +24,7 @@ export default function UseMyHookExample() {
                 title="Hook personalizado"
                 subtitle="Criar seus próprios Hooks permite que você extraia a lógica de um componente em funções reutilizáveis."
             />
-            <ul>{showStates(response.data)}</ul>
+            <ul>{!response.loading ? showStates(response.data) : false}</ul>
         </>
     )
 }
