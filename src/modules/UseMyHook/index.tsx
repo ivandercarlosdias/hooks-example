@@ -1,11 +1,22 @@
 import PageTitle from '../../components/PageTitle'
 import { useFetchJson } from '../../hooks/UseFetchJson'
 
+interface IStateProps {
+    nome: string
+    sigla: string
+}
+
 export default function UseMyHookExample() {
     const url = 'http://files.cod3r.com.br/curso-react/estados.json'
+    const response = useFetchJson(url, 'get')
 
-    const response = useFetchJson(url, method: 'get')
-    console.log(response)
+    function showStates(states: any): JSX.Element {
+        return states.map((state: IStateProps) => (
+            <li key={state.nome}>
+                {state.nome} - {state.sigla}
+            </li>
+        ))
+    }
 
     return (
         <>
@@ -13,6 +24,7 @@ export default function UseMyHookExample() {
                 title="Hook personalizado"
                 subtitle="Criar seus próprios Hooks permite que você extraia a lógica de um componente em funções reutilizáveis."
             />
+            <ul>{showStates(response.data)}</ul>
         </>
     )
 }
